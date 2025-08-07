@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04B1C46E2E44C15400FE000C /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 04B1C46D2E44C15400FE000C /* OneSignal */; };
+		04B1C4702E44C15400FE000C /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 04B1C46F2E44C15400FE000C /* OneSignalExtension */; };
+		04B1C47C2E44C2C500FE000C /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 04B1C4752E44C2C500FE000C /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04B1C4842E44C31800FE000C /* MainSwiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C4832E44C30D00FE000C /* MainSwiftui.swift */; };
+		04B1C4862E44C38A00FE000C /* Nbvsdjhbv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C4852E44C38A00FE000C /* Nbvsdjhbv.swift */; };
+		04B1C4882E44C39E00FE000C /* Kbvgdyshjbv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C4872E44C39E00FE000C /* Kbvgdyshjbv.swift */; };
+		04B1C48A2E44C3AF00FE000C /* Btsgjdhbv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1C4892E44C3AF00FE000C /* Btsgjdhbv.swift */; };
 		641BC8DE2E410EC5007AC603 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BC8DD2E410EC5007AC603 /* ShoppingListViewModel.swift */; };
 		641BC8E02E410ECF007AC603 /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BC8DF2E410ECF007AC603 /* ShoppingListView.swift */; };
 		641BC8E22E41109E007AC603 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641BC8E12E41109E007AC603 /* NotificationManager.swift */; };
@@ -36,7 +43,28 @@
 		642E90E02E4108C50097B712 /* AllProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642E90DF2E4108C50097B712 /* AllProductsView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		04B1C47A2E44C2C500FE000C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 642E90882E3E713D0097B712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B1C4742E44C2C500FE000C;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		04B1C4812E44C2C500FE000C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04B1C47C2E44C2C500FE000C /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		642E90BF2E40F9BD0097B712 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,6 +79,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04B1C4752E44C2C500FE000C /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B1C4822E44C2E200FE000C /* FresherAPP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FresherAPP.entitlements; sourceTree = "<group>"; };
+		04B1C4832E44C30D00FE000C /* MainSwiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSwiftui.swift; sourceTree = "<group>"; };
+		04B1C4852E44C38A00FE000C /* Nbvsdjhbv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nbvsdjhbv.swift; sourceTree = "<group>"; };
+		04B1C4872E44C39E00FE000C /* Kbvgdyshjbv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kbvgdyshjbv.swift; sourceTree = "<group>"; };
+		04B1C4892E44C3AF00FE000C /* Btsgjdhbv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Btsgjdhbv.swift; sourceTree = "<group>"; };
 		641BC8DD2E410EC5007AC603 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
 		641BC8DF2E410ECF007AC603 /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
 		641BC8E12E41109E007AC603 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
@@ -80,12 +114,42 @@
 		642E90DF2E4108C50097B712 /* AllProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllProductsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		04B1C47D2E44C2C500FE000C /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 04B1C4742E44C2C500FE000C /* OneSignalNotificationServiceExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		04B1C4762E44C2C500FE000C /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				04B1C47D2E44C2C500FE000C /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		04B1C4722E44C2C500FE000C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		642E908D2E3E713D0097B712 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				642E90BD2E40F9B90097B712 /* RealmSwift in Frameworks */,
+				04B1C4702E44C15400FE000C /* OneSignalExtension in Frameworks */,
+				04B1C46E2E44C15400FE000C /* OneSignal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				642E90B12E3E71460097B712 /* FresherAPP */,
+				04B1C4762E44C2C500FE000C /* OneSignalNotificationServiceExtension */,
 				642E90912E3E713D0097B712 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				642E90902E3E713D0097B712 /* FresherAPP.app */,
+				04B1C4752E44C2C500FE000C /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +203,7 @@
 		642E90B12E3E71460097B712 /* FresherAPP */ = {
 			isa = PBXGroup;
 			children = (
+				04B1C4822E44C2E200FE000C /* FresherAPP.entitlements */,
 				642E90BA2E3E717C0097B712 /* SWIFTUI */,
 				642E90B92E3E716E0097B712 /* UIKit */,
 				642E90A92E3E71460097B712 /* Assets.xcassets */,
@@ -196,7 +263,11 @@
 		642E90C82E40FE320097B712 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				04B1C4832E44C30D00FE000C /* MainSwiftui.swift */,
+				04B1C4872E44C39E00FE000C /* Kbvgdyshjbv.swift */,
+				04B1C4892E44C3AF00FE000C /* Btsgjdhbv.swift */,
 				642E90C92E4100F10097B712 /* MainViewModel.swift */,
+				04B1C4852E44C38A00FE000C /* Nbvsdjhbv.swift */,
 				642E90CB2E4101010097B712 /* MainView.swift */,
 			);
 			path = Home;
@@ -240,6 +311,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		04B1C4742E44C2C500FE000C /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B1C47E2E44C2C500FE000C /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				04B1C4712E44C2C500FE000C /* Sources */,
+				04B1C4722E44C2C500FE000C /* Frameworks */,
+				04B1C4732E44C2C500FE000C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				04B1C4762E44C2C500FE000C /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 04B1C4752E44C2C500FE000C /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		642E908F2E3E713D0097B712 /* FresherAPP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 642E90A32E3E713F0097B712 /* Build configuration list for PBXNativeTarget "FresherAPP" */;
@@ -248,14 +341,18 @@
 				642E908D2E3E713D0097B712 /* Frameworks */,
 				642E908E2E3E713D0097B712 /* Resources */,
 				642E90BF2E40F9BD0097B712 /* Embed Frameworks */,
+				04B1C4812E44C2C500FE000C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04B1C47B2E44C2C500FE000C /* PBXTargetDependency */,
 			);
 			name = FresherAPP;
 			packageProductDependencies = (
 				642E90BC2E40F9B90097B712 /* RealmSwift */,
+				04B1C46D2E44C15400FE000C /* OneSignal */,
+				04B1C46F2E44C15400FE000C /* OneSignalExtension */,
 			);
 			productName = FresherAPP;
 			productReference = 642E90902E3E713D0097B712 /* FresherAPP.app */;
@@ -271,6 +368,9 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					04B1C4742E44C2C500FE000C = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					642E908F2E3E713D0097B712 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -287,6 +387,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				642E90BB2E40F9B90097B712 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				04B1C46C2E44C15400FE000C /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 642E90912E3E713D0097B712 /* Products */;
@@ -294,11 +395,19 @@
 			projectRoot = "";
 			targets = (
 				642E908F2E3E713D0097B712 /* FresherAPP */,
+				04B1C4742E44C2C500FE000C /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		04B1C4732E44C2C500FE000C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		642E908E2E3E713D0097B712 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +421,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04B1C4712E44C2C500FE000C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		642E908C2E3E713D0097B712 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,11 +438,14 @@
 				642E90D92E4103D30097B712 /* AddProductView.swift in Sources */,
 				642E90CC2E4101010097B712 /* MainView.swift in Sources */,
 				642E90DB2E4103E60097B712 /* ImagePicker.swift in Sources */,
+				04B1C4842E44C31800FE000C /* MainSwiftui.swift in Sources */,
 				642E90B62E3E71460097B712 /* AppDelegate.swift in Sources */,
 				642E90CF2E4101DC0097B712 /* StorageManager.swift in Sources */,
 				642E90B72E3E71460097B712 /* SceneDelegate.swift in Sources */,
+				04B1C4862E44C38A00FE000C /* Nbvsdjhbv.swift in Sources */,
 				642E90C72E40FA670097B712 /* AchievementsView.swift in Sources */,
 				642E90E02E4108C50097B712 /* AllProductsView.swift in Sources */,
+				04B1C48A2E44C3AF00FE000C /* Btsgjdhbv.swift in Sources */,
 				642E90D72E4103C80097B712 /* AddProductViewModel.swift in Sources */,
 				642E90D42E4102A50097B712 /* GeminiService.swift in Sources */,
 				642E90B82E3E71460097B712 /* ViewController.swift in Sources */,
@@ -334,6 +453,7 @@
 				642E90DE2E4108B90097B712 /* AllProductsViewModel.swift in Sources */,
 				641BC8E52E4110AD007AC603 /* SettingsViewModel.swift in Sources */,
 				641BC8E22E41109E007AC603 /* NotificationManager.swift in Sources */,
+				04B1C4882E44C39E00FE000C /* Kbvgdyshjbv.swift in Sources */,
 				642E90C22E40F9D70097B712 /* Extensions.swift in Sources */,
 				642E90D12E4102150097B712 /* RealmModels.swift in Sources */,
 				641BC8DE2E410EC5007AC603 /* ShoppingListViewModel.swift in Sources */,
@@ -342,6 +462,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B1C47B2E44C2C500FE000C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B1C4742E44C2C500FE000C /* OneSignalNotificationServiceExtension */;
+			targetProxy = 04B1C47A2E44C2C500FE000C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		642E90AC2E3E71460097B712 /* LaunchScreen.storyboard */ = {
@@ -363,11 +491,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		04B1C47F2E44C2C500FE000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FreshlPantry.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04B1C4802E44C2C500FE000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FreshlPantry.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		642E90A42E3E713F0097B712 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FresherAPP/FresherAPP.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -386,7 +567,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FreshlPantry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -405,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FresherAPP/FresherAPP.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -423,7 +605,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FreshlPantry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -559,6 +741,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04B1C47E2E44C2C500FE000C /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B1C47F2E44C2C500FE000C /* Debug */,
+				04B1C4802E44C2C500FE000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		642E908B2E3E713D0097B712 /* Build configuration list for PBXProject "FresherAPP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -580,6 +771,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		04B1C46C2E44C15400FE000C /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-XCFramework";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 4.0.0;
+				minimumVersion = 3.0.0;
+			};
+		};
 		642E90BB2E40F9B90097B712 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
@@ -591,6 +791,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		04B1C46D2E44C15400FE000C /* OneSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B1C46C2E44C15400FE000C /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignal;
+		};
+		04B1C46F2E44C15400FE000C /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B1C46C2E44C15400FE000C /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */;
+			productName = OneSignalExtension;
+		};
 		642E90BC2E40F9B90097B712 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 642E90BB2E40F9B90097B712 /* XCRemoteSwiftPackageReference "realm-swift" */;

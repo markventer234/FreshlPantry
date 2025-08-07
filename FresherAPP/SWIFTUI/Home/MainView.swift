@@ -26,7 +26,7 @@ struct MainView: View {
         StorageManager.shared.updateUserLogin()
         AchievementManager.shared.trigger(event: .appOpened)
         
-        NotificationManager.shared.requestAuthorization()
+//        NotificationManager.shared.requestAuthorization()
     }
     
     var body: some View {

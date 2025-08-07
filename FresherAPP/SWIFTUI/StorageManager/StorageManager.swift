@@ -34,7 +34,7 @@ final class StorageManager {
             try realm.write {
                 realm.add(product)
             }
-            NotificationManager.shared.scheduleNotifications(for: product)
+//            NotificationManager.shared.scheduleNotifications(for: product)
             
         } catch {
             print("Error saving product: \(error)")
@@ -66,7 +66,7 @@ final class StorageManager {
     func deleteProduct(withId id: ObjectId) {
         guard let realm = realm, let product = realm.object(ofType: ProductObject.self, forPrimaryKey: id) else { return }
         let productIDString = product._id.stringValue
-        NotificationManager.shared.cancelNotifications(for: productIDString)
+//        NotificationManager.shared.cancelNotifications(for: productIDString)
         do {
             try realm.write {
                 realm.delete(product)

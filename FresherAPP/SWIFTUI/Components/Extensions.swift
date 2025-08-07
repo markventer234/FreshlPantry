@@ -15,7 +15,11 @@ import SwiftUI
 //    static let themeAccentGreen = Color("themeAccentGreen")
 //    static let themeAccentYellow = Color("themeAccentYellow")
 //}
-
+extension UIScreen{
+  static let hgvbjkj = UIScreen.main.bounds.size.width
+  static let sivbfv = UIScreen.main.bounds.size.height
+  static let tyuwdsv = UIScreen.main.bounds.size
+}
 extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
